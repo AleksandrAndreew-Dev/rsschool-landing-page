@@ -246,3 +246,131 @@ body {
   background: var(--text-accent);
   color: var(--text-inverse);
 }
+
+.favorite-coffee {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.favorite-coffee .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.favorite-coffee__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.favorite-coffee__title-sub {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.slider__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border-inverse);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.slider__btn:hover {
+  background: var(--text-accent);
+  color: var(--text-inverse);
+}
+
+.slider__row {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 480px;
+}
+
+.slide__image {
+  width: 480px;
+  height: 480px;
+  object-fit: contain;
+}
+
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.slide__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.slide__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.slide__price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.slider__controls {
+  display: flex;
+  gap: 12px;
+}
+
+.slider__dot {
+  width: 40px;
+  height: 4px;
+  border: none;
+  border-radius: 100px;
+  background: var(--border-primary);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+.slider__dot--active {
+  background: var(--border-inverse);
+}
