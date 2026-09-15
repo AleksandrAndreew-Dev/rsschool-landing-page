@@ -374,3 +374,59 @@ body {
 .slider__dot--active {
   background: var(--border-inverse);
 }
+
+.about {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.about__title-accent {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+.about__images {
+  display: flex;
+  gap: 40px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+
+.about__box {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about__box--big {
+  height: 590px;
+}
+
+.about__box--small {
+  height: 430px;
+}
+
+.about__box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
