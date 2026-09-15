@@ -76,7 +76,7 @@ body {
   margin-bottom: 20px;
 }
 
-.main {
+main {
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -87,6 +87,8 @@ body {
   display: flex;
   justify-content: center;
   padding: 0 40px;
+  width: 100%;
+  max-width: none;
 }
 
 .header__inner {
@@ -429,4 +431,210 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* ========== MOBILE APP ========== */
+.mobile-app {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.mobile-app .container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.mobile-app__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1;
+}
+
+.mobile-app__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.mobile-app__title-accent {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+.mobile-app__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.mobile-app__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* ========== APP BUTTONS ========== */
+.app-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  height: 64px;
+  padding: 12px 20px;
+  border: 1px solid var(--border-inverse);
+  border-radius: 100px;
+  color: var(--text-primary);
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+
+.app-btn:hover {
+  background: var(--text-accent);
+  border-color: var(--text-accent);
+  color: var(--text-inverse);
+}
+
+.app-btn__icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.app-btn__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-btn__label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.app-btn__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mobile-app__screens {
+  flex-shrink: 0;
+  width: 630px;
+  height: 630px;
+  object-fit: contain;
+}
+
+/* ========== CONTACTS / FOOTER ========== */
+.contacts {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.contacts .container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 100px;
+  max-width: 1360px;
+  margin: 0 auto;
+  background: var(--background-container);
+  border-radius: 40px;
+}
+
+.contacts__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1;
+}
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.25;
+  color: var(--text-inverse);
+}
+
+.contacts__title-accent {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+/* ========== SOCIALS ========== */
+.contacts__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+  color: var(--text-inverse);
+  transition:
+    background 0.3s,
+    border-color 0.3s,
+    color 0.3s;
+}
+
+.social-btn:hover {
+  background: var(--text-accent);
+  border-color: var(--text-accent);
+  color: var(--background-container);
+}
+
+/* ========== CONTACTS INFO ========== */
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+
+.contacts__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--text-inverse);
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-inverse);
+  transition: color 0.3s;
+}
+
+.contacts__link:hover {
+  color: var(--text-accent);
+}
+
+.contacts__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
 }
