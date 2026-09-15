@@ -638,3 +638,154 @@ main {
   width: 20px;
   height: 20px;
 }
+
+/* ========== MENU (CATALOG) ========== */
+.menu {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.menu .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.menu__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu__title {
+  max-width: 800px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.menu__title-accent {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+/* ========== TABS ========== */
+.menu__tabs {
+  display: flex;
+  gap: 16px;
+}
+
+.menu__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 46px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.menu__tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: var(--border-primary);
+  font-size: 16px;
+}
+
+.menu__tab--active {
+  background: var(--background-container);
+  border-color: var(--background-container);
+  color: var(--text-inverse);
+}
+
+.menu__tab--active .menu__tab-icon {
+  background: var(--background-page);
+}
+
+.menu__tab:hover:not(.menu__tab--active) {
+  background: var(--text-accent);
+  border-color: var(--text-accent);
+  color: var(--text-inverse);
+}
+
+/* ========== GRID ========== */
+.menu__grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+
+  gap: 40px;
+}
+
+/* ========== CARD ========== */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  border: 1px solid var(--border-primary);
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  border-color: var(--text-accent);
+}
+
+.card__image {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  flex: 1;
+}
+
+.card__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.card__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
