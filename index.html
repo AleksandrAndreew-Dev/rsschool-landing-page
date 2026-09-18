@@ -86,8 +86,11 @@
                         <div class="header__actions">
                               <div class="theme-switch">
 
-                                    <button class="theme-switch__btn theme-switch__btn--active"
-                                            aria-label="Light theme"><svg width="22"
+                                    <button class="theme-switch__btn"
+                                            data-theme-value="light"
+                                            aria-label="Light theme"
+                                            type="button"
+                                            aria-pressed="true"><svg width="22"
                                                height="22"
                                                viewBox="0 0 22 22"
                                                fill="none"
@@ -97,7 +100,10 @@
                                           </svg>
                                     </button>
                                     <button class="theme-switch__btn"
-                                            aria-label="Dark theme"> <svg width="36"
+                                            data-theme-value="dark"
+                                            aria-pressed="false"
+                                            aria-label="Dark theme"
+                                            type="button"> <svg width="36"
                                                height="36"
                                                viewBox="0 0 36 36"
                                                fill="none"
