@@ -12,6 +12,14 @@
             href="./css/reset.css">
       <link rel="stylesheet"
             href="./css/style.css">
+      <script>
+            (function () {
+                  var saved = localStorage.getItem('theme');
+                  var theme = saved === 'dark' ? 'dark' : 'light';
+                  document.documentElement.setAttribute('data-theme', theme);
+                  document.documentElement.style.colorScheme = theme;
+            })();
+      </script>
 </head>
 
 <body>
