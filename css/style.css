@@ -43,6 +43,8 @@
   --text-primary: #403f3d;
   --text-inverse: #e1d4c9;
   --text-accent: #b0907a;
+  --text-on-dark: #e1d4c9;
+  --border-on-dark: #665f55;
   --background-page: #e1d4c9;
   --background-container: #665f55;
   --border-primary: #c1b6ad;
@@ -562,7 +564,7 @@ main {
   font-weight: 600;
   font-size: 60px;
   line-height: 1.25;
-  color: var(--text-inverse);
+  color: var(--text-on-dark);
 }
 
 .contacts__title-accent {
@@ -584,7 +586,7 @@ main {
   height: 60px;
   border: 1px solid var(--border-primary);
   border-radius: 100px;
-  color: var(--text-inverse);
+  color: var(--text-on-dark);
   transition:
     background 0.3s,
     border-color 0.3s,
@@ -609,7 +611,7 @@ main {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.25;
-  color: var(--text-inverse);
+  color: var(--text-on-dark);
 }
 
 .contacts__list {
@@ -625,7 +627,7 @@ main {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--text-inverse);
+  color: var(--text-on-dark);
   transition: color 0.3s;
 }
 
