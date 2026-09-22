@@ -60,6 +60,10 @@
   --border-primary: #665f55;
   --border-inverse: #c1b6ad;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
