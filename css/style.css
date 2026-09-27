@@ -927,20 +927,21 @@ body.is-locked {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   background: rgba(0, 0, 0, 0.4);
   z-index: 100;
+  overflow-y: auto;
 }
 
 .modal__card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  width: 800px;
-  height: 504px;
+  max-width: 800px;
+  min-height: 504px;
   padding: 16px;
   background: var(--background-page);
   border-radius: 40px;
-  box-sizing: border-box;
 }
 
 .modal__card > img {
@@ -957,10 +958,9 @@ body.is-locked {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  width: 458px;
-  height: 472px;
+  flex: 1;
+  min-width: 0;
   padding: 0 0 0 20px;
-  box-sizing: border-box;
 }
 
 /* --- Header: title + desc --- */
